@@ -78,7 +78,7 @@ contract("SimpleBank", function (accounts) {
 
     const logAccountAddress = result.logs[0].args.accountAddress;
     const logDepositAmount = result.logs[0].args.amount.toNumber();
-
+    
     assert.equal(
       expectedEventResult.accountAddress,
       logAccountAddress,
